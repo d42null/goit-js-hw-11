@@ -4,16 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Homework 10</title>
+    <title>Homework 11</title>
   </head>
   <body>
-    <select class="breed-select visually-hidden"></select>
-    <p class="loader">Loading data, please wait...</p>
-    <p class="error visually-hidden">
-      Oops! Something went wrong! Try reloading the page!
-    </p>
-    <div class="cat-info"></div>
-
+    <form class="search-form" id="search-form">
+      <input
+        type="text"
+        name="searchQuery"
+        autocomplete="off"
+        placeholder="Search images..."
+      />
+      <button type="submit">Search</button>
+    </form>
+    <div class="gallery">
+      <!-- Картки зображень -->
+    </div>
+    <div class="bottom">
+      <button type="button" class="load-more visually-hidden">Load more</button>
+    </div>
     <script src="./js/index.js" type="module"></script>
   </body>
 </html>
